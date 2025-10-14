@@ -1,0 +1,36 @@
+# Build artifacts (Foundry)
+out/
+out/build-info/
+cache/
+cache/test-failures/
+broadcast/
+
+# Environment & secrets
+.env
+.env.*
+*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node.js (if present in ancillary tooling)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+
+# Vendor dependencies (Foundry)
+lib/
+
+.gitmodules
