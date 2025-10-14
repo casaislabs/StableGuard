@@ -97,20 +97,20 @@ StableGuard is an ERC20‑based stable token backed by user collateral. The syst
 ## Architecture
 
 ```mermaid
-graph TD
-    U[User] --> SG[StableGuard (ERC20 Stable)]
-    SG --> PO[PriceOracle]
-    SG --> CM[CollateralManager]
-    SG --> LM[LiquidationManager]
-    SG --> DAM[DutchAuctionManager]
-    SG --> RM[RepegManager]
-    SG --> TL[Timelock]
-    AM[ArbitrageManager] --> PO
-    AM --> DEX[Uniswap V2 Router]
-    SG --> AM
-    CM --> PO
-    LM --> CM
-    LM --> SG
+flowchart TD;
+    U[User] --> SG[StableGuard (ERC20 Stablecoin)];
+    SG --> PO[PriceOracle];
+    SG --> CM[CollateralManager];
+    SG --> LM[LiquidationManager];
+    SG --> DAM[DutchAuctionManager];
+    SG --> RM[RepegManager];
+    SG --> TL[Timelock];
+    AM[ArbitrageManager] --> PO;
+    AM --> DEX[Uniswap V2 Router];
+    SG --> AM;
+    CM --> PO;
+    LM --> CM;
+    LM --> SG;
 ```
 
 ### High‑Level Responsibilities
