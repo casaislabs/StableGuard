@@ -1,5 +1,7 @@
 # StableGuard — Gas‑Optimized Modular Stablecoin Protocol
 
+> Whitepaper (PDF): [StableGuard-Whitepaper.pdf](./StableGuard-Whitepaper.pdf)
+
 StableGuard is a research‑grade, modular stablecoin system designed to demonstrate production‑style architecture, gas optimizations, and robust safety checks without requiring mainnet deployment. It includes an on‑chain price oracle with fallback logic, collateral accounting, liquidation via direct and Dutch auction flows, and optional arbitrage/repeg modules. The Repeg module continuously monitors deviation from the target price and applies bounded buy/sell pressure (optionally coordinating with arbitrage) under slippage and size guards to realign the peg; thresholds, cooldowns, and circuit‑breakers prevent oscillations and abuse. Dutch auctions complement direct liquidation by discovering a market‑clearing price with a decaying curve and commit‑reveal flow, reducing MEV and manipulation compared to fixed‑bonus burns while settling unsafe positions under stress.
 
 > Portfolio‑friendly: runs locally with mocks; no fork or deployment required. ETH is represented as `address(0)` for native flows and is supported directly by the oracle in this repository.
@@ -512,6 +514,7 @@ backend/
 ├─ foundry.lock
 ├─ .gitignore
 ├─ LICENSE
+├─ StableGuard-Whitepaper.pdf
 └─ README.md
 ```
 
