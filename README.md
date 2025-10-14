@@ -508,10 +508,10 @@ backend/
 │  ├─ ArbitrageManager.t.sol
 │  ├─ RepegManager.t.sol
 │  └─ Timelock.t.sol
-├─ lib/
-│  ├─ forge-std
-│  └─ openzeppelin-contracts
 ├─ foundry.toml
+├─ foundry.lock
+├─ .gitignore
+├─ LICENSE
 └─ README.md
 ```
 
