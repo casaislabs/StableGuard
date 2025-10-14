@@ -97,8 +97,8 @@ StableGuard is an ERC20‑based stable token backed by user collateral. The syst
 ## Architecture
 
 ```mermaid
-flowchart TD;
-    U[User] --> SG[StableGuard (ERC20 Stablecoin)];
+graph TD;
+    U[User] --> SG[StableGuard - ERC20 Stablecoin];
     SG --> PO[PriceOracle];
     SG --> CM[CollateralManager];
     SG --> LM[LiquidationManager];
